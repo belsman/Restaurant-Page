@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 0.5rem;
+}
+
+div#content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('./background.jpg');
+  height: 100vh;
+}
+
+div#home {
+  text-align: center;
+  padding: 140px 0;
+}
+
+a {
+  text-decoration: none;
+  color:#111;
+  text-shadow: 1px 1px #ddd;
+}
+
+ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+ul.nav a {
+  padding: 14px 16px;
+}
+
+.brand-log {
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.8rem 0.8rem 0 0.8rem;
+}
+
+.lead {
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px #000;
+}
+
+.menu {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
