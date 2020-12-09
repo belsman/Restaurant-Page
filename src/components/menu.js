@@ -1,4 +1,4 @@
-import menuList from './models';
+import menuList from '../models/models';
 
 export default (element) => {
     const foodTemplate = food => `<div class="d-flex justify-content-between bg-light p-3 rounded">

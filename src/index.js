@@ -1,6 +1,6 @@
-import initiatePage from './initiate_page';
-import menuPage from './menu';
-import contactPage from './contact_page';
+import initiatePage from './components/initiate_page';
+import menuPage from './components/menu';
+import contactPage from './components/contact_page';
 import './assets/style.css';
 
 const root = document.querySelector('div#content');
@@ -26,6 +26,10 @@ tablinks.forEach( tablink => {
             content.classList.add('hide');
         });
 
+        if (e.target.id == 'menuBtn') {
+            tablinks[1].classList.add('active');
+        }
+        
         e.target.classList.add('active');
         targetContent.classList.remove('hide');
         targetContent.classList.add('show');
