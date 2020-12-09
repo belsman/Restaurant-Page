@@ -5,9 +5,6 @@ body {
 
 header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   letter-spacing: 1px;
   font-size: 18px;
   padding: 0.5rem;
@@ -33,7 +30,6 @@ ul.nav {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
 }
 
 ul.nav a {
@@ -46,15 +42,28 @@ ul.nav a {
   padding: 0.8rem 0.8rem 0 0.8rem;
 }
 
-.lead {
-  color: #fff;
-  font-size: 1.5rem;
-  text-shadow: 1px 1px #000;
+.active {
+  color: orangered;
 }
 
-.menu {
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.menu-btn {
+  border: 1px solid #ccc;
+  background-color: #e8e8e8;
+  border-radius: 7px;
+  padding: 0.7rem 1rem;
+  color: #000;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
 }

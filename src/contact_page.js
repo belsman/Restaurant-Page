@@ -1,6 +1,4 @@
-import menuList from './models';
-
-export default () => {
+export default element => {
     const template = `
         <h2>Wanna dine with us?</h2>
         <p class="location">
@@ -15,6 +13,9 @@ export default () => {
 
     const contact = document.createElement('div');
     contact.id = 'contact';
+    contact.classList.add('tab-content');
+    contact.classList.add('hide');
     contact.innerHTML = template;
-    return contact;
+    element.appendChild(contact);
+    return element;
 };
