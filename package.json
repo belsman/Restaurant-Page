@@ -4,10 +4,13 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "stylelint":" npx stylelint \"**/*.{css,scss}\""
+    "test": "npm run stylelint && npm run eslint && echo '🎉 All test pass 🎉'",
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development",
+    "stylelint": " npx stylelint \"**/*.{css,scss}\"",
+    "eslint": "eslint .",
+    "dev": "npm run watch"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,7 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.17.2",
     "webpack": "^5.10.0",
-    "webpack-cli": "^4.2.0"
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
