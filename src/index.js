@@ -1,6 +1,7 @@
 import initiatePage from './initiate_page';
 import menuPage from './menu';
 import contactPage from './contact_page';
+import './assets/style.css';
 
 const root = document.querySelector('div#content');
 initiatePage(root);
