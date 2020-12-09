@@ -1,7 +1,7 @@
 export default () => {
     const template = `
     <span class="brand-log">
-        <a href="#">KADUNA RESTAURANT</a>
+        <a href="">KADUNA RESTAURANT</a>
     </span>
     <ul class="nav d-flex">
         <li><a href="" class="tablinks active" data-tab-content-id="home">HOME</a></li>

@@ -8,13 +8,12 @@ export default element => {
             OR call us on: <i class="fa fa-phone"></i> +234 7XX XXXX XXX
         </p>
         <p>
-          <a href = "mailto: abc@example.com">Send Email <i class="fa fa-envelope"></i></a>
+          OR <a href = "mailto: abc@example.com">Send Email <i class="fa fa-envelope"></i></a>
         </p>`;
 
     const contact = document.createElement('div');
     contact.id = 'contact';
-    contact.classList.add('tab-content');
-    contact.classList.add('hide');
+    contact.className = 'tab-content text-center hide bg-light p-3 m-3 rounded';
     contact.innerHTML = template;
     element.appendChild(contact);
     return element;
