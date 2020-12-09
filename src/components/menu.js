@@ -1,9 +1,9 @@
 import menuList from '../models/models';
 
 export default (element) => {
-  const foodTemplate = food => `<div class="d-flex justify-content-between bg-light p-3 rounded">
-        <span class="text-uppercase">${food.name}</span>
-        <span><span class="text-success">NGN</span> ${food.price}</span>
+  const foodTemplate = ({name, price}) => `<div class="d-flex justify-content-between bg-light p-3 rounded">
+        <span class="text-uppercase">${name}</span>
+        <span><span class="text-success">NGN</span> ${price}</span>
     </div>`;
 
   let menuListTemplate = '';
