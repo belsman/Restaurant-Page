@@ -1,5 +1,5 @@
 export default () => {
-    const template = `
+  const template = `
     <span class="brand-log">
         <a href="">KADUNA RESTAURANT</a>
     </span>
@@ -9,8 +9,8 @@ export default () => {
         <li><a href="" class="tablinks" data-tab-content-id="contact">CONTACT US</a></li>
     </ul>`;
 
-    const header = document.createElement('header');
-    header.innerHTML = template;
-    header.className = 'd-flex justify-content-between align-items-end'
-    return header;
+  const header = document.createElement('header');
+  header.innerHTML = template;
+  header.className = 'd-flex justify-content-between align-items-end';
+  return header;
 };

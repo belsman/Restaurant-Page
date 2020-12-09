@@ -30,7 +30,7 @@ div#contact {
 
 a {
   text-decoration: none;
-  color:#111;
+  color: #111;
   text-shadow: 1px 1px #ddd;
 }
 
@@ -38,10 +38,6 @@ ul.nav {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-ul.nav a {
-  padding: 14px 16px;
 }
 
 .brand-log {
@@ -83,4 +79,8 @@ a:hover {
 
 a:visited {
   text-decoration: none;
+}
+
+ul.nav a {
+  padding: 14px 16px;
 }
